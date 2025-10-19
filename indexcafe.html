@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Nocturno</title>
+    <link rel="stylesheet" href="stylecafe.css">
+</head>
+<body>
+    <header>
+        <div class="logo">☕ Café Nocturno</div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="icons">
+            <div id="cart-btn" class="cart-icon">🛒<span id="cart-count">0</span></div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+        </div>
+    </header>
+
+    <div id="cart-panel" class="cart-panel">
+        <h2>🛍 Tu Carrito</h2>
+        <div id="cart-items" class="cart-items"></div>
+        <p id="cart-total">Total: $0.00</p>
+        <button id="clear-cart" class="btn secondary">Vaciar Carrito</button>
+    </div>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>El sabor que despierta tus noches</h1>
+            <p>Disfruta del mejor café artesanal en un ambiente relajante y moderno.</p>
+            <button class="btn" id="verMenu">Ver Menú</button>
+        </section>
+
+        <section id="menu" class="menu">
+            <h2>Nuestro Menú</h2>
+            <div class="menu-items">
+                <div class="item">
+                    <img src="expreso.jpeg" width="250" height="200">
+                    <h3>Espresso</h3>
+                    <p>Intenso, clásico y lleno de energía.</p>
+                    <span>$1.50</span>
+                    <button class="btn add-cart" data-name="Espresso" data-price="1.50">Agregar</button>
+                </div>
+                <div class="item">
+                    <img src="capuchino.jpeg" width="250" height="200">
+                    <h3>Capuccino</h3>
+                    <p>Suave mezcla de leche espumosa y café fuerte.</p>
+                    <span>$2.00</span>
+                    <button class="btn add-cart" data-name="Capuccino" data-price="2.00">Agregar</button>
+                </div>
+                <div class="item">
+                    <img src="late.jpeg" width="250" height="200">
+                    <h3>Latte</h3>
+                    <p>Café cremoso con un toque dulce.</p>
+                    <span>$2.25</span>
+                    <button class="btn add-cart" data-name="Latte" data-price="2.25">Agregar</button>
+                </div>
+                <div class="item">
+                    <img src="moca.jpeg" width="250" height="200">
+                    <h3>Moka</h3>
+                    <p>Una fusión perfecta de chocolate y café.</p>
+                    <span>$2.50</span>
+                    <button class="btn add-cart" data-name="Moka" data-price="2.50">Agregar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes dudas o quieres hacer un pedido?</p>
+            <form id="formContacto">
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+                <input type="email" id="correo" placeholder="Tu correo" required>
+                <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <p id="msgConfirmacion" class="hidden">✅ Mensaje enviado correctamente</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Café Nocturno- By: Plant web_UDP</p>
+    </footer>
+
+    <script src="scriptcafe.js"></script>
+</body>
+</html>
